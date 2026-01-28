@@ -8,7 +8,7 @@ Original file is located at
 """
 
 import streamlit as st
-import pickle
+import joblib
 import numpy as np
 
 # Load models and utilities
