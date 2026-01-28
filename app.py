@@ -11,11 +11,12 @@ import streamlit as st
 import joblib
 import numpy as np
 
-# Load models and utilities
-reg_model = pickle.load(open("model.pkl", "rb"))
-cls_model = pickle.load(open("model2.pkl", "rb"))
-scaler = pickle.load(open("scaler.pkl", "rb"))
-encoder = pickle.load(open("label.pkl", "rb"))
+# Load models & objects
+reg_model = joblib.load("model.pkl")
+cls_model = joblib.load("model2.pkl")
+scaler = joblib.load("scaler.pkl")
+encoder = joblib.load("label.pkl")
+
 
 st.title("AQI Prediction System")
 
